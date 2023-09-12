@@ -1,23 +1,17 @@
 #include "main.h"
 
-/**
- * main - check the code.
- *
- * Return: Always 0.
- */
-int _islower(int c)
+
 	/**
-	  * _islower: command used to chek for lower characters in linux
-	  * 'c' is the letter we are beginning with to check
-	  */
-{
-	if (c >= 97 && C <= 122)
+	 * _islower - check if char is lowercase
+	 * @c: is the char to be checked
+	 * Return: 1 if char is lowercase, otherwise 0.
+	 */
+
+
+	int _islower(int c)
 	{
-		return (1);
+		if (c >= 'a' && c <= 'z')
+			return (1);
+		else
+			return (0);
 	}
-	else
-	{
-		return (0);
-	}
-	_putchar('\n');
-}
