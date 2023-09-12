@@ -1,22 +1,29 @@
 #include "main.h"
-/**
-  * main -entry point
-  * description: prints the alphabets 10 times
-  * return: always (0) success
-  */
-void print_alphabet_x10(void)
-	/* the alphabets are to be printed 10 times */
-{
-	int i;
-	int j;
 
-	for (j = 1; i <= 10; i++)
+
+	/**
+	 * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
+	 * followed by a new line
+	 */
+	void print_alphabet_x10(void)
 	{
-		for (j = 97; j <= 122; j++)
+		char ch;
+		int i;
+
+
+		i = 0;
+
+
+		while (i < 10)
 		{
-			_putchar(j);
+			ch = 'a';
+			while (ch <= 'z')
+			{
+				_putchar(ch);
+				ch++;
+			}
+			_putchar('\n');
+			i++;
 		}
-		_putchar('\n');
 	}
-	return (0);
-}
+
